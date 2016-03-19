@@ -3,11 +3,9 @@
 <head>
 
 <!--Import materialize.css-->
-<link type="text/css" rel="stylesheet"
-	href="lib/materialize/css/google_fonts.css" />
-<link type="text/css" rel="stylesheet"
-	href="lib/materialize/css/materialize.min.css"
-	media="screen,projection" />
+<link type="text/css" rel="stylesheet" href="assets/lib/materialize/css/google_fonts.css" media="screen, projection"/>
+<link type="text/css" rel="stylesheet" href="assets/lib/materialize/css/materialize.min.css" media="screen, projection" />
+<link type="text/css" rel="stylesheet" href="assets/css/gula.css" media="screen, projection" />
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,40 +21,45 @@
 		<li><a href="#!">three</a></li> -->
 		</ul>
 
-		<nav id="nav">
+		<nav id="nav" class="light-blue" >
 			<div class="container">
 				<div class="nav-wrapper">
-
-					<a href="#" class="brand-logo"><img class="responsive-img"
-						src="media/img/logo_gula_small.png"></a>
-
-					<ul id="nav-mobile" class="right hide-on-med-and-down">
-						<li><a href="#"><i class="material-icons left">assignment_ind</i>Bem
-								Vindo, Fulano de Tal</a></li>
-						<li><a href="#"><i class="material-icons left">stars</i>Favoritos</a></li>
-						<!-- Dropdown Trigger -->
-						<li><a class="dropdown-button" href="#!"
-							data-activates="dropdown1"> <i class="material-icons left">shopping_basket</i>Pedidos
-								<i class="material-icons right">arrow_drop_down</i>
-						</a></li>
-						<li><a href="#!" id="toggle-search"><i
-								class="large mdi-action-search"></i></a></li>
+					<a href="#" class="brand-logo"><img class="responsive-img" src="assets/media/img/logo_gula_small.png"></a>
+					<!-- tab-wrapper -->
+					<a class="button-collapse" href="#" data-activates="nav-mobile"><i class="mdi-navigation-menu"></i></a>
+					<!-- .tab-wrapper -->
+					
+					<ul class="right right hide-on-med-and-down">
+						<li>
+							<a href="#"><i class="material-icons left">assignment_ind</i>Bem Vindo, Fulano de Tal</a>
+						</li>
+						<li>
+							<a href="#"><i class="material-icons left">stars</i>Favoritos</a>
+						</li>
+						<li>
+							<!-- Dropdown Trigger -->
+							<a class="dropdown-button" href="#!" data-activates="dropdown1"> <i class="material-icons left">shopping_basket</i>Pedidos<i class="material-icons right">arrow_drop_down</i></a>
+						</li>
+						<li>
+							<a href="#!" id="toggle-search"><i class="large mdi-action-search"></i></a>
+						</li>
 					</ul>
-
-					<a class="button-collapse" href="#" data-activates="nav-mobile"><i
-						class="mdi-navigation-menu"></i></a>
+					
+					<ul id="nav-mobile" class="right side-nav">
+						<li>
+							<a href="#"><i class="material-icons left">stars</i>Favoritos</a>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</nav>
 
-		<div class="row" id="search">
-
+		<div id="search" class="row white-text light-blue darken-2">
 			<div class="container">
 				<form action="https://www.google.com/search" method="get">
 					<input class="form-control" type="text" name="q" placeholder="Search ..."> <input type="hidden" name="as_sitesearch" value="">
 				</form>
 			</div>
-
 		</div>
 
 		<!-- <nav>
@@ -78,7 +81,7 @@
 				<!-- Promo Content 1 goes here -->
 				<div class="card">
 					<div class="card-image waves-effect waves-block waves-light">
-						<img class="activator" src="media/img/comida1.jpg">
+						<img class="activator" src="assets/media/img/comida1.jpg">
 					</div>
 					<div class="card-content">
 						<span class="card-title activator grey-text text-darken-4">Cardápio
@@ -101,7 +104,7 @@
 				<!-- Promo Content 2 goes here -->
 				<div class="card">
 					<div class="card-image waves-effect waves-block waves-light">
-						<img class="activator" src="media/img/comida2.jpg">
+						<img class="activator" src="assets/media/img/comida2.jpg">
 					</div>
 					<div class="card-content">
 						<span class="card-title activator grey-text text-darken-4">Cardápio
@@ -124,7 +127,7 @@
 				<!-- Promo Content 3 goes here -->
 				<div class="card">
 					<div class="card-image waves-effect waves-block waves-light">
-						<img class="activator" src="media/img/comida3.jpg">
+						<img class="activator" src="assets/media/img/comida3.jpg">
 					</div>
 					<div class="card-content">
 						<span class="card-title activator grey-text text-darken-4">Cardápio
@@ -151,7 +154,7 @@
 				<!-- Promo Content 1 goes here -->
 				<div class="card">
 					<div class="card-image waves-effect waves-block waves-light">
-						<img class="activator" src="media/img/comida4.jpg">
+						<img class="activator" src="assets/media/img/comida4.jpg">
 					</div>
 					<div class="card-content">
 						<span class="card-title activator grey-text text-darken-4">Cardápio
@@ -173,7 +176,7 @@
 				<!-- Promo Content 2 goes here -->
 				<div class="card">
 					<div class="card-image waves-effect waves-block waves-light">
-						<img class="activator" src="media/img/comida5.jpg">
+						<img class="activator" src="assets/media/img/comida5.jpg">
 					</div>
 					<div class="card-content">
 						<span class="card-title activator grey-text text-darken-4">Cardápio
@@ -195,7 +198,7 @@
 				<!-- Promo Content 3 goes here -->
 				<div class="card">
 					<div class="card-image waves-effect waves-block waves-light">
-						<img class="activator" src="media/img/comida6.jpg">
+						<img class="activator" src="assets/media/img/comida6.jpg">
 					</div>
 					<div class="card-content">
 						<span class="card-title activator grey-text text-darken-4">Cardápio
@@ -217,17 +220,15 @@
 		</div>
 	</div>
 
-
-	<footer class="page-footer">
-		<div class="container"></div>
-		<div class="footer-copyright">
-			<div class="container">2016 Copyright Equipe Gulapp</div>
-		</div>
+	<footer class="page-footer light-blue">
+			<div class="footer-copyright">
+				<div class="container center">2016 Copyright Equipe Gulapp</div>
+			</div>
 	</footer>
 
 	<!--Import jQuery before materialize.js-->
-	<script type="text/javascript" src="lib/jquery/jquery-2.2.1.js"></script>
-	<script type="text/javascript" src="lib/materialize/js/materialize.min.js"></script>
+	<script type="text/javascript" src="assets/lib/jquery/jquery-2.2.1.js"></script>
+	<script type="text/javascript" src="assets/lib/materialize/js/materialize.min.js"></script>
 	<script type="text/javascript" src="assets/js/gula.js"></script>
 </body>
 </html>
