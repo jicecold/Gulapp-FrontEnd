@@ -1,0 +1,31 @@
+<div ng-controller="controllerLogin">
+	<div class="row">
+		<div class="col offset-s4 s4 valign">
+			<div class="card">
+				<div class="card-image">
+					<img src="assets/media/img/logo_gula.png" class="black-bg" />
+					<!-- <span class="card-title">Card Title</span> -->
+				</div>
+				<div class="card-content">
+					<div class="row">
+						<div class="input-field col s12">
+							<i class="material-icons prefix">account_circle</i> <input
+								id="login" type="text" /> <label for="login">Login</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="input-field col s12">
+							<i class="material-icons prefix">vpn_key</i> <input id="password"
+								type="password" /> <label for="password">Senha</label>
+						</div>
+					</div>
+					<div class="card-action">
+						<div class="center-align">
+							<a ng-click="doLogin()" class="waves-effect waves-teal btn-flat">Login</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
