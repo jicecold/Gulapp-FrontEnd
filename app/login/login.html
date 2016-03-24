@@ -1,10 +1,10 @@
-<div ng-controller="controllerLogin">
+<div ng-controller="ControllerLogin as loginVm">
 	<div class="row">
 		<div class="col offset-s4 s4 valign">
 			<div class="card">
 				<div class="card-image">
 					<img src="assets/media/img/logo_gula.png" class="black-bg" />
-					<!-- <span class="card-title">Card Title</span> -->
+					<span class="card-title">{{loginVm.title}}</span>
 				</div>
 				<div class="card-content">
 					<div class="row">
@@ -21,7 +21,7 @@
 					</div>
 					<div class="card-action">
 						<div class="center-align">
-							<a ng-click="doLogin()" class="waves-effect waves-teal btn-flat">Login</a>
+							<a ng-click="loginVm.doLogin()" class="waves-effect waves-teal btn-flat">Login</a>
 						</div>
 					</div>
 				</div>

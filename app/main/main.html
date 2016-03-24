@@ -1,4 +1,4 @@
-<div ng-controller="controllerMain">
+<div ng-controller="ControllerMain as mainVm">
 	<header>
 		<!-- Dropdown Structure -->
 		<ul id="dropdown1" class="dropdown-content">
@@ -11,32 +11,17 @@
 		<nav id="nav" class="light-blue" >
 			<div class="container">
 				<div class="nav-wrapper">
-					<a href="#" class="brand-logo"><img class="responsive-img" src="assets/media/img/logo_gula_small.png"></a>
+					<a href="#main" class="brand-logo"><img class="responsive-img" src="assets/media/img/logo_gula_small.png"/></a>
 					<!-- tab-wrapper -->
 					<a class="button-collapse" href="#" data-activates="nav-mobile"><i class="mdi-navigation-menu"></i></a>
 					<!-- .tab-wrapper -->
 					
 					<ul class="right right hide-on-med-and-down">
 						<li>
-							<a href="#"><i class="material-icons left">assignment_ind</i>Bem Vindo, Fulano de Tal</a>
-						</li>
-						<li>
-							<a href="#"><i class="material-icons left">stars</i>Favoritos</a>
-						</li>
-						<li>
-							<!-- Dropdown Trigger -->
-							<a class="dropdown-button" href="#!" data-activates="dropdown1"> <i class="material-icons left">shopping_basket</i>Pedidos<i class="material-icons right">arrow_drop_down</i></a>
-						</li>
-						<li>
-							<a href="#!" id="toggle-search"><i class="large mdi-action-search"></i></a>
+							<a id="toggle-search" ng-click="mainVm.toggleSearchClick()"><i class="large mdi-action-search"></i></a>
 						</li>
 					</ul>
 					
-					<ul id="nav-mobile" class="right side-nav">
-						<li>
-							<a href="#"><i class="material-icons left">stars</i>Favoritos</a>
-						</li>
-					</ul>
 				</div>
 			</div>
 		</nav>
@@ -61,6 +46,7 @@
 		</div>
 	</nav> -->
 	</header>
+	
 	<div id="content">
 		<div class="row">
 

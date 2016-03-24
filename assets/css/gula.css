@@ -22,3 +22,7 @@
 	box-shadow: none;
 	border-bottom: 1px solid #00AE96;
 }
+
+header, main, footer {
+    padding-left: 0px;
+}
